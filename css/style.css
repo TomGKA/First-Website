@@ -1,3 +1,5 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root
 {
@@ -13,7 +15,6 @@
     --bg-light-blue: #8FC1E3;
     --bg-off-white-: #F7F9FB; 
     --bg-dust-: #C9C1B5; 
-
 }
 body
 {
@@ -21,7 +22,7 @@ body
     padding: 0;*/
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins' sans-serif;
+    font-family: ';
 }
 *
 {
@@ -135,6 +136,10 @@ ul
 {
     transform: scale(1.05);
 }
+.dark-shadow
+{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
 /*aside*/
 .aside
 {
@@ -209,7 +214,6 @@ ul
     display: none;
     align-items: center;
     justify-content: center;
-
 }
 .aside .nav-toggler span 
 {
@@ -341,8 +345,7 @@ h3.my-profession
 .about .about-content
 {
     flex: 0 0 100%;
-    max-width: 100%;
-    
+    max-width: 100%; 
 }
 .about .about-content .about-text
 {
@@ -371,7 +374,6 @@ h3.my-profession
     flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
-
 }
 .about .about-content .personal-info .info-item 
 {
@@ -420,7 +422,6 @@ h3.my-profession
     font-weight: 600;
     font-size: 16px;
     color: var(--text-black-900);
-
 }
 .about .about-content .skills .skill-item .progress
 {
@@ -450,4 +451,116 @@ h3.my-profession
     color: var(--text-black-900);
     top: -40px;
     font-weight: 500;
+}
+.about .about-content .education,
+.about .about-content .experience
+{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h3.title
+{
+    font-size: 22px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: black;
+}
+.about .about-content .timeline-box
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline
+{
+    background-color: var(--bg-off-white-);
+    padding: 30px 15px;
+    border: 1px solid var(--bg--black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item
+{
+    position: relative;
+    padding-left: 35px;
+    padding-bottom: 50px; 
+}
+.about .about-content .timeline .timeline-item:last-child 
+{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item ::before
+{
+    content: ' ';
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--bg-dust-);
+}
+.about .about-content .timeline .circle-dot
+{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--bg-dust-);
+}
+.about .about-content .timeline .timeline-date
+{
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-title
+{
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000;
+}
+.about .about-content .timeline .timeline-text 
+{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-900);
+}
+
+
+
+/* portfolio */
+.portfolio .portfolio-heading
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portfolio .portfolio-heading h2
+{
+    color: #000;
+    font-family: 700;
+}
+.portfolio .portfolio-item
+{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item-inner
+{
+    border: 6px solid var(--bg--black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .portfolio-item-inner .portfolio-item img 
+{
+    width: 100%;
+    display: block
 }
